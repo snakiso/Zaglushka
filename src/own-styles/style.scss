@@ -1,0 +1,62 @@
+@import '../own-styles/fonts';
+@import '../own-styles/vars';
+@import '../own-styles/breakpoints';
+@import '../blocks/common/header/header';
+@import '../blocks/main/title/title';
+@import '../blocks/main/themes/themes';
+@import '../blocks/main/contact/contact';
+@import '../blocks/main/organization/organization';
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: plumb;
+  font-weight: 400;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mobile {
+    background-image: none;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    background-image: url(../img/mobile-bg.png);
+    background-size: auto;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+
+
+.wrapper {
+  max-width: $container-width;
+  margin: auto;
+  padding: 0 $offset-main;
+
+  @include mobile {
+    padding: 0px 16px 0 30px;
+  }
+}

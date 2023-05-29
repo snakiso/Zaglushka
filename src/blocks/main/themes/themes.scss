@@ -1,0 +1,72 @@
+.themes {
+
+  &__span {
+    padding-left: $offset-left;
+    font-weight: 700;
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    letter-spacing: -0.03em;
+  }
+
+  &__list {
+    padding-left: $offset-left;
+    max-width: 535px;
+    list-style: none;
+    margin: 12px 0;
+  }
+
+  &__item {
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 9px;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 9px;
+      width: 5px;
+      height: 1px;
+      background-color: black;
+    }
+  }
+
+  @include tablet {
+    &__span {
+      padding-left: $offset-tablet-left;
+    }
+
+    &__list {
+      padding-left: $offset-tablet-left;
+      max-width: 430px;
+      margin: 20px 0;
+    }
+  }
+
+  @include mobile {
+    order: 2;
+
+    &__span {
+      padding-left: $offset-mobile-left;
+      font-size: 13px;
+      margin-top: 25px;
+    }
+
+    &__list {
+      padding-left: $offset-mobile-left;
+      max-width: 315px;
+      margin: 8px 0;
+    }
+
+    &__item {
+      font-size: 13px;
+      letter-spacing: -.045em;
+      line-height: 1.1em;
+      padding-left: 8px;
+    }
+  }
+}

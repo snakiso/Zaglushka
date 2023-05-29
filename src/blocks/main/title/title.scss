@@ -1,0 +1,120 @@
+.title {
+  margin-top: 31px;
+
+  &__subtitle {
+    padding-left: $offset-left;
+    font-size: 26px;
+    font-weight: 500;
+    color: $color-text;
+    letter-spacing: -0.035em;
+  }
+
+  &__container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__info {
+    margin-top: 35px;
+    margin-right: 66px;
+  }
+
+  &__logo {
+    max-width: 600px;
+  }
+
+  &__date {
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 16px;
+    letter-spacing: -0.018em;
+  }
+
+  &__city {
+    font-weight: 500;
+    font-size: 26px;
+    display: block;
+    letter-spacing: -0.03em;
+  }
+
+  &__place {
+    font-size: 20px;
+    display: block;
+    letter-spacing: -0.03em;
+  }
+
+  &__second {
+    color: $color-secondary;
+    padding-left: $offset-left;
+    margin: 40px 0 0 0;
+    font-size: 48px;
+    max-width: 600px;
+    letter-spacing: -0.03em;
+    line-height: 1.05em;
+  }
+
+  @include tablet {
+    &__subtitle {
+      padding-left: $offset-tablet-left;
+      font-size: 20px;
+    }
+
+    &__logo {
+      max-width: 340px;
+    }
+
+    &__second {
+      padding-left: $offset-tablet-left;
+      margin: 15px 0 0 0;
+      font-size: 40px;
+      max-width: 500px;
+    }
+  }
+
+  @include mobile {
+    order: 1;
+    margin-top: 20px;
+
+    &__subtitle {
+      padding-left: $offset-mobile-left;
+      font-size: 12.5px;
+    }
+
+    &__logo {
+      max-width: 290px;
+      order: 1;
+    }
+
+    &__info {
+      padding-left: $offset-mobile-left;
+      order: 3;
+      margin-top: 24px;
+      margin-right: 0;
+    }
+
+    &__second {
+      padding-left: $offset-mobile-left;
+      margin: 15px 0 0 0;
+      font-size: 24px;
+      max-width: 350px;
+      order: 2;
+      letter-spacing: -.05em;
+    }
+
+    &__date {
+      font-size: 19px;
+      margin-bottom: 6px;
+      letter-spacing: -0.03em;
+    }
+
+    &__city {
+      font-size: 17px;
+    }
+
+    &__place {
+      font-size: 13px;
+    }
+  }
+
+}
