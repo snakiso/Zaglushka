@@ -6,7 +6,7 @@
 @import '../blocks/main/themes/themes';
 @import '../blocks/main/contact/contact';
 @import '../blocks/main/organization/organization';
-
+@import '../blocks/main/archive/archive';
 
 * {
   box-sizing: border-box;
@@ -42,6 +42,10 @@ body {
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
+
+    &_bg-down {
+      background-position-y: bottom;
+    }
   }
 }
 

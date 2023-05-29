@@ -1,0 +1,83 @@
+.archive {
+  margin-top: 60px;
+
+  &__logo {
+    max-width: 475px;
+    padding-left: 90px;
+  }
+
+  &__title {
+    padding-left: 205px;
+    display: block;
+    font-weight: 500;
+    font-size: 30px;
+    color: #2fa6dd;
+    max-width: 720px;
+    margin-top: 35px;
+    letter-spacing: -0.022em;
+  }
+
+  &__list {
+    padding-left: 205px;
+    list-style: none;
+    margin-top: 38px;
+    max-width: 480px;
+  }
+
+  &__item {
+    margin-bottom: 27px;
+  }
+
+  &__link {
+    font-weight: 700;
+    display: block;
+    color: black;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+  }
+
+  @include tablet {
+    &__logo {
+      max-width: 340px;
+      padding-left: 0px;
+    }
+
+    &__title {
+      padding-left: 100px;
+      max-width: 590px;
+    }
+
+    &__list {
+      padding-left: 100px;
+      list-style: none;
+      margin-top: 38px;
+      max-width: 335px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+
+  @include mobile {
+    &__logo {
+      max-width: 290px;
+    }
+
+    &__title {
+      padding-left: 88px;
+      font-size: 22px;
+      max-width: 500px;
+    }
+
+    &__list {
+      padding-left: 88px;
+      max-width: 285px;
+      padding-bottom: 175px;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+  }
+}
