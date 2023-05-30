@@ -104,12 +104,14 @@
   align-items: center;
   padding-left: 175px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__info {
   letter-spacing: -0.06em;
   font-size: 9px;
   color: #808080;
+  margin-right: 20px;
 }
 
 .header__list {
@@ -300,6 +302,10 @@
   padding-bottom: 40px;
 }
 
+.organization__organizer-link {
+  display: inline-block;
+}
+
 .organization__organizer {
   margin-right: 30px;
 }
@@ -453,7 +459,7 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 730px) {
   .header {
     background-color: #2FA6DD;
     padding: 0;
@@ -505,6 +511,10 @@ body {
   .title {
     order: 1;
     margin-top: 20px;
+  }
+
+  .title__container {
+    flex-direction: column;
   }
 
   .title__subtitle {
