@@ -357,6 +357,14 @@
   letter-spacing: -0.05em;
 }
 
+.archive__text {
+  display: block;
+}
+
+.archive__year {
+  display: block;
+}
+
 * {
   box-sizing: border-box;
 }

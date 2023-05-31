@@ -36,6 +36,14 @@
     letter-spacing: -0.05em;
   }
 
+  &__text {
+    display: block;
+  }
+
+  &__year {
+    display: block;
+  }
+
   @include tablet {
     &__logo {
       max-width: 340px;
